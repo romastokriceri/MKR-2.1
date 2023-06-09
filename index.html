@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MKR-2.1</title>
+<script type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+
+  <h1>MKR-2.1</h1>
+<div class="messages">
+  <div class="error-message">
+    <input type="date" name="born" id="date"  tabindex="1">
+    <p>Повідомлення про помилку з візуальним відображенням</p>
+  </div>
+
+  <div class="error-message">
+    <p>Це поле є обов'язковим.</p>
+    <audio id="error-sound">
+      <source src="/sounds/error-sound.mp3" type="audio/mpeg">
+    </audio>
+     <button onclick="playErrorSound()"> <p>Повідомлення про помилку з аудіо та звуковими ефектами  </p> </button>
+  </div>
+
+
+
+  <div class="error-message">
+    <p>Це поле є обов'язковим.</p>
+    <a href="#" class="help-link">Потрібна допомога?</a>
+    <br>
+    <div class="help-text">
+      <p>Повідомлення про помилку з додатковими поясненнями</p>
+    </div>
+  </div>
+
+</div>
+
+ <script src="js/script.js"></script>
+</body>
+</html>

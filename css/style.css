@@ -1,0 +1,120 @@
+/*Обнулення*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+    color: #b52b27;
+  }
+  50% {
+    opacity: 0.2;
+    color: red;
+
+  }
+  100% {
+    opacity: 1;
+    color: #b52b27;
+  }
+
+}
+
+
+
+body{
+  padding: 20%;
+  font-family: 'Tahoma', Arial, sans-serif;
+  letter-spacing: 2px;
+  background: #cacaca;
+}
+p{
+  font-family: 'Tahoma', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.error-message:nth-child(0){
+  background-color: #e7ffe6;
+color: #2c2c2c;
+padding: 10px;
+border: 1px solid #27b53a;
+}
+.error-message:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd6ff;
+  color: #2c2c2c;
+  padding: 10px;
+  border: 1px solid #3527b5;
+}
+/* !Доробити js */
+.error-message:nth-child(1)::before {
+  display: none;
+content: "\26A0";
+font-size: 5vh;
+position: absolute;
+margin-right: 55%;
+color: #b52b27;
+}
+
+.error-message:nth-child(2){
+  background-color: #f7f8cfb9;
+color: #2c2c2c;
+padding: 10px;
+border: 1px solid #979926;
+}
+.error-message:nth-child(2) button{
+background-color: transparent;
+}
+.error-message:nth-child(3){
+  background-color: #e6f2ff;
+color: #2c2c2c;
+padding: 10px;
+border: 1px solid #2775b5;
+border-radius: 35px;
+}
+.error-message, h1{
+margin-top: 2%;
+  border-radius: 25px;
+display: flex;
+justify-content: center;
+align-items: center;
+ flex-direction: column;
+
+}
+.error-message{
+  background-color: #ffebe6;
+  color: #b52b27;
+  padding: 10px;
+  border: 1px solid #b52b27;
+}
+
+
+.help-link {
+  color: #2c2c2c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.help-text {
+  display: none;
+  flex-direction: column;
+}
+
+.help-text{
+  animation: blink 2s normal;
+  color: #b52b27;
+
+}
