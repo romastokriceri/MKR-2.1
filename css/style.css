@@ -44,7 +44,11 @@ p{
   font-family: 'Tahoma', Arial, sans-serif;
   letter-spacing: 2px;
 }
-
+/* TODO: how to make it beautiful */
+.titleOfMessage{
+  font-weight: 400;
+  color: #1f1f1f;
+}
 .error-message:nth-child(0){
   background-color: #e7ffe6;
 color: #2c2c2c;
@@ -59,14 +63,20 @@ border: 1px solid #27b53a;
   padding: 10px;
   border: 1px solid #3527b5;
 }
-/* !Доробити js */
-.error-message:nth-child(1)::before {
-  display: none;
-content: "\26A0";
-font-size: 5vh;
-position: absolute;
-margin-right: 55%;
+
+.error-message:nth-child(2)::before {
+display: block;
+content: "\266B";
+font-size: 2vh;
+margin-right: 15%;
 color: #b52b27;
+}
+
+#errorText{
+  display: none;
+  content: "\26A0";
+  font-size: 5vh;
+  color: #b52b27;
 }
 
 .error-message:nth-child(2){

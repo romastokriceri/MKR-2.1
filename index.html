@@ -12,31 +12,36 @@
 
   <h1>MKR-2.1</h1>
 <div class="messages">
-  <div class="error-message">
-    <input type="date" name="born" id="date"  tabindex="1">
-    <p>Повідомлення про помилку з візуальним відображенням</p>
+
+  <div class="error-message"><!-- !1st message -->
+  <p class="titleOfMessage">Повідомлення про помилку з візуальним відображенням</p>
+    <input type="date" id="dateInput" tabindex="1">
+    <p id="errorText">&#x26A0;</p>
   </div>
 
-  <div class="error-message">
-    <p>Це поле є обов'язковим.</p>
+   <div class="error-message"> <!-- ?2nd message -->
+    <p class="titleOfMessage"  >Повідомлення про помилку з аудіо та звуковими ефектами</p>
     <audio id="error-sound">
       <source src="/sounds/error-sound.mp3" type="audio/mpeg">
     </audio>
-     <button onclick="playErrorSound()"> <p>Повідомлення про помилку з аудіо та звуковими ефектами  </p> </button>
+
+    <!-- TODO:поле повинно випадати та звук грати одночасно -->
+
+     <button onclick="playErrorSound()"> <p>Це поле є обов'язковим.</p> </button>
   </div>
 
 
 
-  <div class="error-message">
+  <div class="error-message"><!-- *3rd message -->
+    <p class="titleOfMessage">Повідомлення про помилку з додатковими поясненнями</p>
     <p>Це поле є обов'язковим.</p>
     <a href="#" class="help-link">Потрібна допомога?</a>
-    <br>
     <div class="help-text">
-      <p>Повідомлення про помилку з додатковими поясненнями</p>
     </div>
   </div>
 
 </div>
+
 
  <script src="js/script.js"></script>
 </body>
