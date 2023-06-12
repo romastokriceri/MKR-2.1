@@ -41,13 +41,16 @@ body{
   background: #cacaca;
 }
 p{
+  color: #b52b27;
   font-family: 'Tahoma', Arial, sans-serif;
   letter-spacing: 2px;
 }
 /* TODO: how to make it beautiful */
 .titleOfMessage{
-  font-weight: 400;
-  color: #1f1f1f;
+  font-weight: 600;
+  color: #1f1f1f93;
+  font-size: 24px; /* Розмір шрифту */
+  margin-bottom: 1%; /* Відступ знизу */
 }
 .error-message:nth-child(0){
   background-color: #e7ffe6;
@@ -63,8 +66,11 @@ border: 1px solid #27b53a;
   padding: 10px;
   border: 1px solid #3527b5;
 }
+#textInput{
 
-.error-message:nth-child(2)::before {
+}
+
+#textInput::before {
 display: block;
 content: "\266B";
 font-size: 2vh;
@@ -85,9 +91,7 @@ color: #2c2c2c;
 padding: 10px;
 border: 1px solid #979926;
 }
-.error-message:nth-child(2) button{
-background-color: transparent;
-}
+
 .error-message:nth-child(3){
   background-color: #e6f2ff;
 color: #2c2c2c;
