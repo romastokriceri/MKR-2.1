@@ -15,13 +15,20 @@ function playErrorSound() {
   audio.play();
   errorMessage.style.display = 'block';
 }
-  // Показати повідомлення про помилку
+
 
 // *3rd message
-var helpLink = document.querySelector(".help-link");
-var helpText = document.querySelector(".help-text");
 
-helpLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  helpText.style.display = "flex"
-});
+const fileInput = document.getElementById('fileInput');
+const helpText = document.getElementById('.helpText');
+
+function giveHelpLink() {
+  helpText.style.display = 'flex';
+}
+// var fileInput = document.querySelector("fileInput");
+// var helpText = document.querySelector(".help-text");
+
+// fileInput.addEventListener("click", function(event) {
+//   event.preventDefault();
+//   helpText.style.display = "flex"
+// });

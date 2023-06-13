@@ -35,46 +35,89 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 
 body{
-  padding: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
   font-family: 'Tahoma', Arial, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.5vh;
   background: #cacaca;
 }
 p{
   color: #b52b27;
-  font-family: 'Tahoma', Arial, sans-serif;
-  letter-spacing: 2px;
+font-family: 'Tahoma', Arial, sans-serif;
+text-align: center;
+padding: 2%;
 }
-/* TODO: how to make it beautiful */
-.titleOfMessage{
-  font-weight: 600;
-  color: #1f1f1f93;
-  font-size: 24px; /* Розмір шрифту */
-  margin-bottom: 1%; /* Відступ знизу */
+h1{
+   
 }
-.error-message:nth-child(0){
-  background-color: #e7ffe6;
-color: #2c2c2c;
-padding: 10px;
-border: 1px solid #27b53a;
+.titleOfMessage,h1{ /*MAIN */
+font-family: 'Tahoma', Arial, sans-serif;
+   font-weight: 600;
+  color: #1f1f1f62;
+  font-size: 20px; 
 }
-.error-message:nth-child(1){
-  display: flex;
-  flex-direction: column;
+/* 1`st Message */
+.error-message:nth-child(2) .titleOfMessage {
+   color:#3527b594 ;
+  
+}
+/* 2nd Message */
+.error-message:nth-child(3) .titleOfMessage {
+   color: #979926d2;
+   
+}
+/* 3rd Message */
+.titleOfMessage {
+   color: #2775b5bd;
+   
+}
+.error-message {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   padding:2%;
+   color: #2c2c2c;
+   margin: 1.5%;
+   border-radius: 35px;
+}
+/* 1`st Message */
+.error-message:nth-child(2){
   background-color: #ddd6ff;
-  color: #2c2c2c;
-  padding: 10px;
   border: 1px solid #3527b5;
 }
-#textInput{
-
+#dateInput {
+  width: 10vw; 
+  font-size: 2vh; 
+  padding: 1%;
+  border-radius: 15px; 
+  background: #f1eeff;
+  border: 2px solid #c3b9f8;
+}
+#dateInput:focus {
+ border-color: #3527b5dc; /* Колір обрамлення при фокусуванні */
 }
 
-#textInput::before {
-display: block;
+#textInput{
+width: 10vw;
+   font-size: 2vh;
+   padding: 1%;
+   border-radius: 15px;
+   background: #fbfcdacc;
+   border: 2px solid #cccc9ff6;
+}
+
+#textInput:focus {
+   border-color: #979926;
+}
+#errorMessage::before {
+display: contents;
 content: "\266B";
 font-size: 2vh;
-margin-right: 15%;
+margin-right: 1%;
 color: #b52b27;
 }
 
@@ -84,37 +127,17 @@ color: #b52b27;
   font-size: 5vh;
   color: #b52b27;
 }
-
-.error-message:nth-child(2){
-  background-color: #f7f8cfb9;
-color: #2c2c2c;
-padding: 10px;
+/* 2nd Message */
+.error-message:nth-child(3){
+background-color: #f7f8cfb9;
 border: 1px solid #979926;
 }
-
-.error-message:nth-child(3){
+/* 3rd Message */
+.error-message:nth-child(4){
   background-color: #e6f2ff;
-color: #2c2c2c;
-padding: 10px;
 border: 1px solid #2775b5;
-border-radius: 35px;
-}
-.error-message, h1{
-margin-top: 2%;
-  border-radius: 25px;
-display: flex;
-justify-content: center;
-align-items: center;
- flex-direction: column;
 
 }
-.error-message{
-  background-color: #ffebe6;
-  color: #b52b27;
-  padding: 10px;
-  border: 1px solid #b52b27;
-}
-
 
 .help-link {
   color: #2c2c2c;
@@ -125,10 +148,17 @@ align-items: center;
 .help-text {
   display: none;
   flex-direction: column;
+   animation: blink 2s normal;
+      color: #b52b27;
 }
 
-.help-text{
-  animation: blink 2s normal;
+/* ФОРМА ДЛЯ ПОМИЛОК
+  background-color: #ffebe6;
   color: #b52b27;
+  padding: 10px;
+  border: 1px solid #b52b27;
 
-}
+      /*Вірна відповідь
+      background-color: #e7ffe6;
+      border: 1px solid #27b53a;
+ */

@@ -10,8 +10,7 @@
 </head>
 <body>
 
-  <h1>MKR-2.1</h1>
-<div class="messages">
+<h1>MKR-2.1</h1>
 
   <div class="error-message"><!-- *1st message -->
   <p class="titleOfMessage">Повідомлення про помилку з візуальним відображенням</p>
@@ -28,7 +27,7 @@
       <source src="/sounds/error-sound.mp3" type="audio/mpeg">
     </audio>
 
-    <input type="text" id="textInput"  onclick="playErrorSound()">
+    <input type="email" id="textInput" placeholder="E m a i l" onclick="playErrorSound()">
     <p id="errorMessage" style="display: none;">Це поле є обов'язковим</p>
   </div>
 
@@ -37,12 +36,12 @@
   <div class="error-message"><!-- *3rd message -->
     <p class="titleOfMessage">Повідомлення про помилку з додатковими поясненнями</p>
 
-    <a href="#" class="help-link">Потрібна допомога?</a>
-    <div class="help-text"><p>Це поле є обов'язковим.</p>
+  <input type="file" id="fileInput"  onclick="giveHelpLink()">
+    <div class="help-text"><p>Це поле є обов'язковим.<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link">Потрібна допомога?</a></p>
     </div>
   </div>
 
-</div>
+
 
  <script src="js/script.js"></script>
 </body>
