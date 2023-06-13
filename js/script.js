@@ -1,6 +1,6 @@
 // *1st message
 const dateInput = document.getElementById('dateInput');
-const errorText = document.getElementById('errorText');
+// const errorText = document.getElementById('errorText');
 
 dateInput.addEventListener('click', function() {
   errorText.style.display = 'block';
@@ -19,16 +19,24 @@ function playErrorSound() {
 
 // *3rd message
 
-const fileInput = document.getElementById('fileInput');
-const helpText = document.getElementById('.helpText');
+const fileInput = document.getElementById('rangeInput');
+const helpText = document.getElementById('helpText');
 
-function giveHelpLink() {
-  helpText.style.display = 'flex';
-}
-// var fileInput = document.querySelector("fileInput");
-// var helpText = document.querySelector(".help-text");
+rangeInput.addEventListener('input', function() {
+  const value = parseInt(this.value);
 
-// fileInput.addEventListener("click", function(event) {
-//   event.preventDefault();
-//   helpText.style.display = "flex"
-// });
+  if ( value > 50) {
+    helpText.style.display = 'flex';
+  } else {
+    helpText.style.display = 'none';
+  }
+});
+
+//*4th message
+
+const changeStyleButton = document.getElementById('buttonInput');
+const block = document.getElementById('.wrongPassword');
+
+changeStyleButton.addEventListener('click', function() {
+  block.classList.toggle('.wrongChange');
+});

@@ -11,8 +11,8 @@
 <body>
 
 <h1>MKR-2.1</h1>
-
-  <div class="error-message"><!-- *1st message -->
+<!-- *1st message -->
+  <div class="error-message">
   <p class="titleOfMessage">Повідомлення про помилку з візуальним відображенням</p>
     <input type="date" id="dateInput" tabindex="1">
     <p id="errorText">&#x26A0;</p>
@@ -20,8 +20,8 @@
 
 
 
-
-   <div class="error-message"> <!-- ?2nd message -->
+<!-- ?2nd message -->
+   <div class="error-message">
     <p class="titleOfMessage"  >Повідомлення про помилку з аудіо та звуковими ефектами</p>
     <audio id="error-sound">
       <source src="/sounds/error-sound.mp3" type="audio/mpeg">
@@ -32,17 +32,24 @@
   </div>
 
 
-
-  <div class="error-message"><!-- *3rd message -->
+<!-- *3rd message -->
+  <div class="error-message">
     <p class="titleOfMessage">Повідомлення про помилку з додатковими поясненнями</p>
 
-  <input type="file" id="fileInput"  onclick="giveHelpLink()">
-    <div class="help-text"><p>Це поле є обов'язковим.<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link">Потрібна допомога?</a></p>
+  <input type="range" id="rangeInput">
+    <div id="helpText"><p>Невірний формат файлу!!!<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link">Потрібна допомога?</a></p>
     </div>
   </div>
 
+  <!-- !4th message -->
+  <div class="error-message">
+    <p class="titleOfMessage">Повідомлення про помилку з прогресивним вдосконаленням</p>
 
-
+  <input type="password" id="passwordInput" placeholder="Введіть пароль:">
+<input type="button" value="Відправити" id="buttonInput" >
+  <div class="wrongPassword"><p class="wrongMessage">Невірний пароль, спробуйте ще раз</p>
+    </div>
+  </div>
  <script src="js/script.js"></script>
 </body>
 </html>

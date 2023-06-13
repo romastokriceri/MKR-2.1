@@ -49,29 +49,32 @@ font-family: 'Tahoma', Arial, sans-serif;
 text-align: center;
 padding: 2%;
 }
-h1{
-   
-}
+
 .titleOfMessage,h1{ /*MAIN */
 font-family: 'Tahoma', Arial, sans-serif;
    font-weight: 600;
   color: #1f1f1f62;
-  font-size: 20px; 
+  font-size: 20px;
 }
 /* 1`st Message */
 .error-message:nth-child(2) .titleOfMessage {
    color:#3527b594 ;
-  
+
 }
 /* 2nd Message */
 .error-message:nth-child(3) .titleOfMessage {
    color: #979926d2;
-   
+
 }
 /* 3rd Message */
-.titleOfMessage {
-   color: #2775b5bd;
-   
+.error-message:nth-child(4) .titleOfMessage {
+   color: #2775b5c0;
+
+}
+/* 4th Message */
+.error-message:nth-child(5) .titleOfMessage {
+  color: #27b53ac2;
+
 }
 .error-message {
    display: flex;
@@ -90,10 +93,10 @@ font-family: 'Tahoma', Arial, sans-serif;
   border: 1px solid #3527b5;
 }
 #dateInput {
-  width: 10vw; 
-  font-size: 2vh; 
+  width: 10vw;
+  font-size: 2vh;
   padding: 1%;
-  border-radius: 15px; 
+  border-radius: 15px;
   background: #f1eeff;
   border: 2px solid #c3b9f8;
 }
@@ -145,20 +148,56 @@ border: 1px solid #2775b5;
   cursor: pointer;
 }
 
-.help-text {
+#helpText {
   display: none;
   flex-direction: column;
-   animation: blink 2s normal;
+  animation: blink 2s normal;
       color: #b52b27;
 }
 
-/* ФОРМА ДЛЯ ПОМИЛОК
+/* 4th Message */
+.error-message:nth-child(5){
+      background-color: #d0ffce;
+      border: 1px solid #27b53a;
+ }
+
+ #passwordInput{
+  width: 10vw;
+   font-size: 2vh;
+   padding: 1%;
+   border-radius: 15px;
+   background: #daf8d9;
+   border: 2px solid #5ead68a9;
+ }
+
+ #passwordInput:focus{
+  border-color: #458b4e;
+ }
+ #buttonInput{
+
+  margin-top: 1%;
+  width: 10vw;
+   font-size: 2vh;
+   padding: 1%;
+   border-radius: 15px;
+   background: #85eb81;
+   border: 2px solid #5ead68a9;
+   text-shadow: 1px 2px 2px #315536;
+ }
+ #buttonInput:active{
+  border-color: #458b4e;
+  background: #508f4e;
+ }
+ .wrongMessage{
+  display: none;
+  margin-top: 2%;
+  color: #2c2c2c;
+  text-shadow: 1px 2px 2px #cfa69e;
+
+
+}
+.wrongChange{
   background-color: #ffebe6;
   color: #b52b27;
-  padding: 10px;
-  border: 1px solid #b52b27;
-
-      /*Вірна відповідь
-      background-color: #e7ffe6;
-      border: 1px solid #27b53a;
- */
+   border: 1px solid #b52b27;
+}
