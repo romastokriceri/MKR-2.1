@@ -46,9 +46,11 @@
     <p class="titleOfMessage">Повідомлення про помилку з прогресивним вдосконаленням</p>
 
   <input type="password" id="passwordInput" placeholder="Введіть пароль:">
-<input type="button" value="Відправити" id="buttonInput" >
+<input type="button" value="Відправити" id="buttonInput" onclick="giveErrorMessage()" >
   <div class="wrongPassword"><p class="wrongMessage">Невірний пароль, спробуйте ще раз</p>
     </div>
+<div id="block" class="defaultStyle"></div>
+
   </div>
  <script src="js/script.js"></script>
 </body>

@@ -33,10 +33,10 @@ rangeInput.addEventListener('input', function() {
 });
 
 //*4th message
-
+//! giveErrorMessage and change it to make my idea
 const changeStyleButton = document.getElementById('buttonInput');
-const block = document.getElementById('.wrongPassword');
+const block = document.getElementById('block');
 
 changeStyleButton.addEventListener('click', function() {
-  block.classList.toggle('.wrongChange');
+  block.classList.toggle('updatedStyle');
 });

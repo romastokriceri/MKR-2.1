@@ -201,3 +201,15 @@ border: 1px solid #2775b5;
   color: #b52b27;
    border: 1px solid #b52b27;
 }
+
+.defaultStyle {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition: background-color 0.5s;
+}
+
+.updatedStyle {
+  background-color: red;
+}
+
