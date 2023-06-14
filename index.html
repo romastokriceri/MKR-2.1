@@ -15,7 +15,7 @@
   <div class="error-message">
   <p class="titleOfMessage">Повідомлення про помилку з візуальним відображенням</p>
     <input type="date" class="dateInput" tabindex="1">
-    <p id="errorText">&#x26A0;</p>
+    <p class="errorSymbol">&#x26A0;</p>
   </div>
 
 
@@ -28,7 +28,7 @@
     </audio>
 
     <input type="email" class="textInput" placeholder="E m a i l" onclick="playErrorSound()">
-    <p id="errorMessage" style="display: none;">Це поле є обов'язковим</p>
+    <p class="errorMessage" style="display: none;">Це поле є обов'язковим!</p>
   </div>
 
 
@@ -36,14 +36,14 @@
   <div class="error-message">
     <p class="titleOfMessage">Повідомлення про помилку з додатковими поясненнями</p>
 
-  <input type="range" id="rangeInput">
-    <div class="helpText">Невірний формат файлу!!!
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link"><p> Потрібна допомога?</p></a>
+  <input type="range" class="rangeInput">
+    <div class="helpText">Невірна відмітка!!!<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link">Потрібна допомога?</a>
     </div>
   </div>
 
   <!-- !4th message -->
   <div class="error-message">
+    <div class="wrongPassword">
     <p class="titleOfMessage">Повідомлення про помилку з прогресивним вдосконаленням</p>
 
   <input type="password" id="passwordInput" placeholder="Введіть пароль:">

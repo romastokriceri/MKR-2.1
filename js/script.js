@@ -1,14 +1,14 @@
 // *1st message
 const dateInput = document.querySelector('.dateInput');
-// const errorText = document.getElementById('errorText');
+const errorSymbol = document.querySelector('.errorSymbol');
 
 dateInput.addEventListener('click', function() {
-  errorText.style.display = 'block';
+  errorSymbol.style.display = 'block';
 });
 
 // *2nd message
 const textInput = document.querySelector('.textInput');
-const errorMessage = document.getElementById('errorMessage');
+const errorMessage = document.querySelector('.errorMessage');
 
 function playErrorSound() {
   var audio = document.getElementById("error-sound");
@@ -19,7 +19,7 @@ function playErrorSound() {
 
 // *3rd message
 
-const fileInput = document.getElementById('rangeInput');
+const rangeInput = document.querySelector('.rangeInput');
 const helpText = document.querySelector('.helpText');
 
 rangeInput.addEventListener('input', function() {
@@ -33,11 +33,12 @@ rangeInput.addEventListener('input', function() {
 });
 
 //*4th message
+const wrongMessage = document.querySelector('.wrongMessage')
 function giveErrorMessage(){
   wrongMessage.style.display = 'block';
 }
 
-const changeStyleButton = document.getElementById('buttonInput');
+const changeStyleButton = document.querySelector('.buttonInput');
 
 changeStyleButton.addEventListener('click', function() {
   const blocks = document.querySelectorAll('.block');

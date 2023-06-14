@@ -121,15 +121,15 @@ width: 10vw;
 .textInput:focus {
    border-color: #979926;
 }
-#errorMessage::before {
-display: contents;
+.errorMessage::before {
+display: none;
 content: "\266B";
 font-size: 2vh;
 margin-right: 1%;
 color: #b52b27;
 }
 
-#errorText{
+.errorSymbol{
   display: none;
   content: "\26A0";
   font-size: 5vh;
@@ -148,7 +148,7 @@ border: 1px solid #2775b5;
 }
 
 .help-link {
-  color: #2c2c2c;
+  color: #b52b27;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -166,7 +166,7 @@ border: 1px solid #2775b5;
       border: 1px solid #27b53a;
  }
 
- #passwordInput{
+ .passwordInput{
   width: 10vw;
    font-size: 2vh;
    padding: 1%;
@@ -175,10 +175,10 @@ border: 1px solid #2775b5;
    border: 2px solid #5ead68a9;
  }
 
- #passwordInput:focus{
+ .passwordInput:focus{
   border-color: #458b4e;
  }
- #buttonInput{
+ .buttonInput{
 
   margin-top: 1%;
   width: 10vw;
@@ -189,7 +189,7 @@ border: 1px solid #2775b5;
    border: 2px solid #5ead68a9;
    text-shadow: 1px 2px 2px #315536;
  }
- #buttonInput:active{
+ .buttonInput:active{
   border-color: #458b4e;
   background: #508f4e;
  }
@@ -199,10 +199,32 @@ border: 1px solid #2775b5;
   color: #2c2c2c;
   text-shadow: 1px 2px 2px #cfa69e;
 
-
 }
-.wrongChange{
+
+
+.error-message:nth-child(5) .wrongPassword{
+/*TODO: remake */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+z-index: 2;
+  margin: -3.8%;
+  border-radius: 35px;
+  background-color: #ffebe6;
+  border: 2px solid #b52b27;
+}
+.error-message:nth-child(5)>.wrongPassword>.titleOfMessage{
+  color: #b52c27a2;
+}
+
+.wrongPassword .buttonInput{
   background-color: #ffebe6;
   color: #b52b27;
-   border: 1px solid #b52b27;
+   border:  #b52b27;
+}
+.wrongPassword .buttonInput:active{
+  background-color: #ffebe6;
+  color: #b52b27;
+   border: #b52b27;
 }
