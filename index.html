@@ -14,7 +14,7 @@
 <!-- *1st message -->
   <div class="error-message">
   <p class="titleOfMessage">Повідомлення про помилку з візуальним відображенням</p>
-    <input type="date" id="dateInput" tabindex="1">
+    <input type="date" class="dateInput" tabindex="1">
     <p id="errorText">&#x26A0;</p>
   </div>
 
@@ -27,7 +27,7 @@
       <source src="/sounds/error-sound.mp3" type="audio/mpeg">
     </audio>
 
-    <input type="email" id="textInput" placeholder="E m a i l" onclick="playErrorSound()">
+    <input type="email" class="textInput" placeholder="E m a i l" onclick="playErrorSound()">
     <p id="errorMessage" style="display: none;">Це поле є обов'язковим</p>
   </div>
 
@@ -37,7 +37,8 @@
     <p class="titleOfMessage">Повідомлення про помилку з додатковими поясненнями</p>
 
   <input type="range" id="rangeInput">
-    <div id="helpText"><p>Невірний формат файлу!!!<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link">Потрібна допомога?</a></p>
+    <div class="helpText">Невірний формат файлу!!!
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link"><p> Потрібна допомога?</p></a>
     </div>
   </div>
 
@@ -47,11 +48,10 @@
 
   <input type="password" id="passwordInput" placeholder="Введіть пароль:">
 <input type="button" value="Відправити" id="buttonInput" onclick="giveErrorMessage()" >
-  <div class="wrongPassword"><p class="wrongMessage">Невірний пароль, спробуйте ще раз</p>
+  <div class="wrongPassword"><p id="wrongMessage">Невірний пароль, спробуйте ще раз</p>
     </div>
-<div id="block" class="defaultStyle"></div>
-
   </div>
  <script src="js/script.js"></script>
 </body>
 </html>
+<!-- TODO: змінити айді на клас де потрібно та доробити 4 блок -->

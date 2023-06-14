@@ -1,5 +1,5 @@
 // *1st message
-const dateInput = document.getElementById('dateInput');
+const dateInput = document.querySelector('.dateInput');
 // const errorText = document.getElementById('errorText');
 
 dateInput.addEventListener('click', function() {
@@ -7,7 +7,7 @@ dateInput.addEventListener('click', function() {
 });
 
 // *2nd message
-const textInput = document.getElementById('textInput');
+const textInput = document.querySelector('.textInput');
 const errorMessage = document.getElementById('errorMessage');
 
 function playErrorSound() {
@@ -20,7 +20,7 @@ function playErrorSound() {
 // *3rd message
 
 const fileInput = document.getElementById('rangeInput');
-const helpText = document.getElementById('helpText');
+const helpText = document.querySelector('.helpText');
 
 rangeInput.addEventListener('input', function() {
   const value = parseInt(this.value);
@@ -33,10 +33,30 @@ rangeInput.addEventListener('input', function() {
 });
 
 //*4th message
-//! giveErrorMessage and change it to make my idea
+function giveErrorMessage(){
+  wrongMessage.style.display = 'block';
+}
+
 const changeStyleButton = document.getElementById('buttonInput');
-const block = document.getElementById('block');
 
 changeStyleButton.addEventListener('click', function() {
-  block.classList.toggle('updatedStyle');
+  const blocks = document.querySelectorAll('.block');
+  blocks.forEach(function(block) {
+    switch (block.id) {
+      case 'block1':
+        block.style.border = '2px solid blue';
+        break;
+      case 'block2':
+        block.style.border = '2px solid red';
+        break;
+      case 'block3':
+        block.style.border = '2px solid green';
+        break;
+      case 'block4':
+        block.style.border = '2px solid yellow';
+        break;
+      default:
+        break;
+    }
+  });
 });
