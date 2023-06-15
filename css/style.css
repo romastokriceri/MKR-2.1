@@ -150,12 +150,10 @@ border: 1px solid #2775b5;
 
 }
 .rangeInput {
-
-  background: #e6e6e6;
+background: none;
   opacity: 0.7;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  border-radius: 5px;
 }
 
 .rangeInput:hover, .rangeInput:focus {
@@ -218,4 +216,83 @@ border: 1px solid #2775b5;
   margin-top: 2%;
   color: #2c2c2c;
   text-shadow: 1px 2px 2px #cfa69e;
+}
+
+input[type=range] {
+  height: 26px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #2497E3;
+  border-radius: 15px;
+
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 5px #000000;
+  border: 1px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #A1D0FF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #2497E3;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #2497E3;
+  border-radius: 15px;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 5px #000000;
+  border: 1px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #A1D0FF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2497E3;
+  border-radius: 30px;
+}
+input[type=range]::-ms-fill-upper {
+  background: #2497E3;
+  border-radius: 30px;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 5px #000000;
+  border: 1px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #A1D0FF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #2497E3;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #2497E3;
 }
