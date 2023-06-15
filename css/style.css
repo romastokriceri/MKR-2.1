@@ -164,6 +164,7 @@ border: 1px solid #2775b5;
 .error-message:nth-child(5){
       background-color: #d0ffce;
       border: 1px solid #27b53a;
+      transition: background-color 0.3s, color 0.5s, border-color 0.7s, text-shadow 0.6s;
  }
 
  .passwordInput{
@@ -173,11 +174,13 @@ border: 1px solid #2775b5;
    border-radius: 15px;
    background: #daf8d9;
    border: 2px solid #5ead68a9;
+   transition: background-color 0.3s, color 0.6s, border-color 0.6s, text-shadow 0.7s;
  }
 
  .passwordInput:focus{
   border-color: #458b4e;
  }
+
  .buttonInput{
 
   margin-top: 1%;
@@ -188,7 +191,9 @@ border: 1px solid #2775b5;
    background: #85eb81;
    border: 2px solid #5ead68a9;
    text-shadow: 1px 2px 2px #315536;
+   transition: background-color 0.3s, color 0.6s, border-color 0.6s, text-shadow 0.7s;
  }
+
  .buttonInput:active{
   border-color: #458b4e;
   background: #508f4e;
@@ -198,33 +203,63 @@ border: 1px solid #2775b5;
   margin-top: 2%;
   color: #2c2c2c;
   text-shadow: 1px 2px 2px #cfa69e;
-
 }
 
 
-.error-message:nth-child(5) .wrongPassword{
-/*TODO: remake */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-z-index: 2;
-  margin: -3.8%;
-  border-radius: 35px;
+/*! -------------------------------- */
+.error-message:nth-child(5) .titleOfMessage {
+  color: #27b53ac2;
+}
+.wrongMessage{
+  display: none;
+}
+.buttonInput{
+  background: #85eb81;
+border: 2px solid #5ead68a9;
+text-shadow: 1px 2px 2px #315536;
+}
+.buttonInput:active{
+  border-color: #458b4e;
+  background: #508f4e;
+ }
+ .error-message:nth-child(5){
+  background-color: #d0ffce;
+  border: 1px solid #27b53a;
+}
+.passwordInput{
+   background: #daf8d9;
+   border: 2px solid #5ead68a9;
+ }
+ .passwordInput:focus{
+  border-color: #458b4e;
+ }
+/*! -------------------------------- */
+/* .error-message:nth-child(5){
+
   background-color: #ffebe6;
-  border: 2px solid #b52b27;
+  border-color: #b52b27;
 }
-.error-message:nth-child(5)>.wrongPassword>.titleOfMessage{
+.error-message:nth-child(5)>.titleOfMessage{
   color: #b52c27a2;
 }
 
-.wrongPassword .buttonInput{
-  background-color: #ffebe6;
+.buttonInput{
+  background-color: #fca3a3;
   color: #b52b27;
-   border:  #b52b27;
+
+    border: 2px solid #b52b27;
+    text-shadow: 1px 2px 2px #745353;
 }
-.wrongPassword .buttonInput:active{
-  background-color: #ffebe6;
-  color: #b52b27;
+.buttonInput:active{
+  background-color: #852424;
+  color: #f1c6c6;
    border: #b52b27;
+   text-shadow: 1px 2px 2px #ffcfcfa2;
 }
+.passwordInput{
+   background: #ffe6e6;
+   border: 2px solid #ff6e69;
+ }
+ .passwordInput:focus{
+  border-color: #b60b05;
+ } */
