@@ -53,6 +53,7 @@ p{
 font-family: 'Tahoma', Arial, sans-serif;
 text-align: center;
 padding: 2%;
+user-select: none;
 }
 
 .titleOfMessage,h1{ /*MAIN */
@@ -60,6 +61,7 @@ font-family: 'Tahoma', Arial, sans-serif;
    font-weight: 600;
   color: #1f1f1f62;
   font-size: 20px;
+  user-select: none;
 }
 /* 1`st Message */
 .error-message:nth-child(2) .titleOfMessage {
@@ -147,7 +149,18 @@ border: 1px solid #979926;
 border: 1px solid #2775b5;
 
 }
+.rangeInput {
 
+  background: #e6e6e6;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+.rangeInput:hover, .rangeInput:focus {
+  opacity: 1;
+}
 .help-link {
   color: #b52b27;
   text-decoration: underline;
@@ -195,9 +208,10 @@ border: 1px solid #2775b5;
    transition: background-color 0.6s, color 0.6s, border-color 0.6s, text-shadow 0.6s;
  }
 
- .buttonInput:active{
-  border-color: #458b4e;
-  background: #508f4e;
+ .buttonInput:focus{
+  border-color:#458b4e;
+  background:  #31703a;
+  text-shadow: 2px 1px 2px #85eb8191;;
  }
 .wrongMessage{
   display: none;
@@ -205,64 +219,3 @@ border: 1px solid #2775b5;
   color: #2c2c2c;
   text-shadow: 1px 2px 2px #cfa69e;
 }
-
-/*! -------------------------------- */
-/* .error-message:nth-child(5) .titleOfMessage {
-  color: #27b53ac2;
-}
-.wrongMessage{
-  display: none;
-}
-.buttonInput{
-  background: #85eb81;
-border: 2px solid #5ead68a9;
-text-shadow: 1px 2px 2px #315536;
-}
-.buttonInput:active{
-  border-color: #458b4e;
-  background: #508f4e;
- }
- .error-message:nth-child(5){
-  background-color: #d0ffce;
-  border: 1px solid #27b53a;
-}
-.passwordInput{
-   background: #daf8d9;
-   border: 2px solid #5ead68a9;
- }
- .passwordInput:focus{
-  border-color: #458b4e;
- } */
-/*! -------------------------------- */
-
-/*? -------------------------------- */
-/* .error-message:nth-child(5){
-
-  background-color: #ffebe6;
-  border-color: #b52b27;
-}
-.error-message:nth-child(5)>.titleOfMessage{
-  color: #b52c27a2;
-}
-
-.buttonInput{
-  background-color: #fca3a3;
-  color: #b52b27;
-
-    border: 2px solid #b52b27;
-    text-shadow: 1px 2px 2px #745353;
-}
-.buttonInput:active{
-  background-color: #852424;
-  color: #f1c6c6;
-   border: #b52b27;
-   text-shadow: 1px 2px 2px #ffcfcfa2;
-}
-.passwordInput{
-   background: #ffe6e6;
-   border: 2px solid #ff6e69;
- }
- .passwordInput:focus{
-  border-color: #b60b05;
- } */
-/*? -------------------------------- */

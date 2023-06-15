@@ -27,7 +27,7 @@
       <source src="/sounds/error-sound.mp3" type="audio/mpeg">
     </audio>
 
-    <input type="email" class="textInput" placeholder="E m a i l" onclick="playErrorSound()">
+    <input  type="email" class="textInput" placeholder="E m a i l" onclick="playErrorSound()" tabindex="2">
     <p class="errorMessage" style="display: none;">Це поле є обов'язковим!</p>
   </div>
 
@@ -36,16 +36,16 @@
   <div class="error-message">
     <p class="titleOfMessage">Повідомлення про помилку з додатковими поясненнями</p>
 
-  <input type="range" class="rangeInput">
-    <div class="helpText">Невірна відмітка!!!<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" class="help-link">Потрібна допомога?</a>
+  <input type="range" class="rangeInput" tabindex="3">
+    <div class="helpText">Невірна відмітка!!!<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" target="_blank" class="help-link">Потрібна допомога?</a>
     </div>
   </div>
 
   <!-- !4th message -->
   <div class="error-message">
     <p class="titleOfMessage">Повідомлення про помилку з прогресивним вдосконаленням</p>
-  <input type="password" class="passwordInput" placeholder="Введіть пароль:">
-<input type="button" value="Відправити" class="buttonInput" onclick=giveErrorMessage() >
+  <input type="password" class="passwordInput" placeholder="Введіть пароль:" tabindex="4">
+<input type="button" value="Відправити" class="buttonInput" onclick=giveErrorMessage() tabindex="5">
  <p class="wrongMessage">Невірний пароль, спробуйте ще раз</p>
     </div>
  <script src="js/script.js"></script>

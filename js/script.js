@@ -35,6 +35,15 @@ rangeInput.addEventListener('input', function() {
 const wrongMessage = document.querySelector('.wrongMessage')
 const passwordInput = document.querySelector('.passwordInput')
 
+
+passwordInput.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Зупиняємо стандартну дію, щоб форма не була відправлена
+    changeStyleButton.click(); // Викликаємо подію click на кнопці
+  }
+});
+
+
   const changeStyleButton = document.querySelector('.buttonInput');
 
 let isStyleChanged = false;
